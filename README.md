@@ -7,9 +7,18 @@
 [![MQTT](https://img.shields.io/badge/Protocol-MQTT_%2F_WebSockets-660066?style=for-the-badge&logo=hivemq&logoColor=white)](https://www.hivemq.com/)
 [![OpenWeather](https://img.shields.io/badge/API-OpenWeatherMap-orange?style=for-the-badge&logo=openweathermap&logoColor=white)](https://openweathermap.org/)
 [![JavaScript](https://img.shields.io/badge/Frontend-Vanilla_JS_%26_CSS3-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](./LICENSE)
 
 <p align="center">
-  <b>A connected IoT ambient lighting and environmental monitoring system with real-time telemetry, remote lamp control, and live weather integration.</b>
+  <b>A connected IoT ambient lighting and environmental monitoring system with real-time telemetry, remote lamp control, and live weather integration.</b><br>
+  <i>(Bachelor's Degree IoT & Embedded Systems Project)</i>
+</p>
+
+<!-- Web Application Preview Screenshot -->
+<p align="center">
+  <img src="./docs/images/weather_lamp_preview.png" width="400" alt="Weather Lamp Web Application Preview" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);" />
+  <br>
+  <sub><i>Interactive Web Application UI & Telemetry Dashboard</i></sub>
 </p>
 
 </div>
@@ -18,7 +27,7 @@
 
 ## 📌 Overview
 
-**Smart Weather Lamp** bridges real-time IoT hardware telemetry with an interactive web dashboard. Built around the **ESP8266 (NodeMCU)** microcontroller and a **DHT11 sensor**, the system continuously streams temperature and humidity data to a web client via **MQTT over WebSockets**.
+**Smart Weather Lamp** is an undergraduate (Bachelor's Degree) IoT engineering project that bridges real-time hardware telemetry with an interactive web dashboard. Built around the **ESP8266 (NodeMCU)** microcontroller and a **DHT11 sensor**, the system continuously streams indoor temperature and humidity data to a web client via **MQTT over WebSockets**.
 
 Additionally, the dashboard fetches live local weather conditions using the **OpenWeatherMap API** and browser Geolocation, providing a dual perspective of indoor microclimates and outdoor weather conditions, complete with time-adaptive dynamic ambient themes.
 
@@ -122,20 +131,25 @@ graph TD
 │   ├── temp.js              # WebSockets MQTT client & OpenWeatherMap integration
 │   ├── icons/               # SVG Weather condition icons
 │   └── vercel.json          # Deployment configuration for Vercel
+├── docs/
+│   └── images/
+│       └── weather_lamp_preview.png  # Web application UI screenshot
+├── LICENSE                  # MIT License
 └── README.md                # Project documentation
 ```
-
----
-
-## 👨‍💻 Author
-
-**Chananya Meepayung (Aun)**
-- **GitHub:** [@iaun123](https://github.com/iaun123)
-- **LinkedIn:** [chananya-meepayung](https://www.linkedin.com/in/chananya-meepayung-b39335356/)
-- **Email:** chananyaaun123@gmail.com
 
 ---
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+---
+
+## 👨‍💻 Author
+
+**Chananya Meepayung (Aun)**
+- **Role:** Robotics & Embedded Software Engineer
+- **GitHub:** [@iaun123](https://github.com/iaun123)
+- **LinkedIn:** [chananya-meepayung](https://www.linkedin.com/in/chananya-meepayung-b39335356/)
+- **Email:** chananyaaun123@gmail.com
