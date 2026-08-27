@@ -65,7 +65,7 @@ graph TD
 
     ESP -->|Publish Metrics| TOPIC_DATA
     TOPIC_DATA -->|Subscribe / WebSockets| UI_METRICS
-    UI_CONTROL -->|Publish Command (1/0)| TOPIC_CMD
+    UI_CONTROL -->|Publish Command: 1 or 0| TOPIC_CMD
     TOPIC_CMD -->|Subscribe Callback| ESP
     UI_WEATHER -.->|HTTP GET| OWM["OpenWeatherMap REST API"]
 ```
